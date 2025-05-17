@@ -10,7 +10,7 @@ The strategy features:
 - **Technical indicators** (OHLCV) via custom classes
 - Integration with **Untrade API** to source crypto market data
 
-## Structure
+##  Repository Structure
 
 ```bash
 kalman-hurst-btc-strategy/
@@ -59,11 +59,14 @@ kalman-hurst-btc-strategy/
 - 🧪 Fully parameterized backtesting with metrics for performance and trade efficiency
 - 📊 Clear performance tracking via cumulative returns and trade annotations
 
-## 🛠 Tech Stack
+## Tech Stack
 
-- **Python, NumPy, Pandas, Matplotlib, Scikit-learn**
-- Statsmodels, TA-Lib, Gym/Custom RL Environment  
-- Jupyter notebooks for experimentation and visualization
+- **Python** – Core development language  
+- **NumPy, Pandas** – Data manipulation and series handling  
+- **Matplotlib** – Performance and signal visualization  
+- **Statsmodels** – Hurst Exponent and statistical tools  
+- **FilterPy** – Kalman filter implementation  
+- **Jupyter Notebooks** – Strategy development and prototyping  
   
 ## Getting Started
 
