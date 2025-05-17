@@ -1,8 +1,6 @@
-# BTC-ETH_Stat
+# Cryptocurrency Trading Strategies using Mean Reversion and Hurst Exponents
 
-# Kalman-Hurst BTC Strategy
-
-This repository presents a mean-reversion trading strategy developed for BTC/USDT using statistical signal processing and fractal analysis. The strategy was designed with an emphasis on systematic execution, quantitative rigor, and modular architecture.
+This repository presents a mean-reversion trading strategy developed for BTC/USDT using statistical signal processing and fractal analysis. The strategy was designed with an emphasis on systematic execution, quantitative rigor, and modular architecture. This can also be used on ETH/USDT considering the mean-correlation of BTC and ETH in real-time market.
 
 ## Overview
 
@@ -26,3 +24,11 @@ kalman-hurst-btc-strategy/
 ├── requirements.txt
 └── README.md
 ```
+## Regime Flow
+
+- **
+
+## Strategy Flow
+
+
+
