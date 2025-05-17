@@ -26,9 +26,66 @@ kalman-hurst-btc-strategy/
 ```
 ## Regime Flow
 
-- **
+- Zerolag- Cusum based regime prediction, earlier methods used k-means and HMMs. 
+- F1-Score and TDA used for performance metrics.
+![newplot](https://github.com/user-attachments/assets/e718c43f-9534-4a96-9132-cfb65bb4256a)
 
 ## Strategy Flow
 
+### BTC_Approach
+- Pull BTC/USDT, ETH/USDT OHLCV data
+- Initialse technical indicators listed in indicators.py file.
+- Filter and smoothen using Kalman Filter
+- Estimate Hurst Exponent
+- Apply mean reversion logic in strategy.py
+- Log Performance metrics and PnL
+- **Actions**: Enter Long/Short, Exit Long/Short, Hold
+- **Reward Function**: Profit/loss adjusted for commission and risk
+
+### ETH_Correlation_Approach
+- Correlation analysis between BTC/USDT and ETH log returns.
+- CUSUM for regime shift detection
+- ATR-based volatility thresholds
+- Hurst Exponent for trend filtering
+- Kalman & Gaussian Filters for smoothing
+
+## Features
+
+- 📉 **Mean-reversion strategy** leveraging Hurst Exponent and Kalman Filter smoothing
+- 🧠 **Kalman Filter**-based price estimation for robust signal generation
+- 📈 **Hurst Exponent analysis** to identify trending vs. mean-reverting regimes
+- 🔁 Dynamic entry/exit signals based on residual spread from the Kalman filter
+- ⚖️ Custom position sizing logic based on volatility-adjusted thresholds
+- 🧪 Fully parameterized backtesting with metrics for performance and trade efficiency
+- 📊 Clear performance tracking via cumulative returns and trade annotations
+
+## 🛠 Tech Stack
+
+- **Python, NumPy, Pandas, Matplotlib, Scikit-learn**
+- Statsmodels, TA-Lib, Gym/Custom RL Environment  
+- Jupyter notebooks for experimentation and visualization
+  
+## Getting Started
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/Gradient-7788/BTC-ETH_Stat
+    cd BTC-ETH_Stat
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Run simulations:
+
+    - Use Jupyter notebooks in the `notebooks/` folder for ETH correlation and BTC RL experiments.
+
+## 👥 Contributors
+
+Team 67 – Zelta Automations  
 
 
