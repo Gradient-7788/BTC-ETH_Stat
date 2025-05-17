@@ -1,0 +1,6 @@
+pandas>=2.2.2
+numpy>=1.26.4
+pykalman==0.10.1
+hurst==0.0.5
+untrade-client>=0.1.0 
+plotly>=5.22.0
